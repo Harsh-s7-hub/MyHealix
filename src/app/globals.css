@@ -44,6 +44,14 @@ body {
   overflow-x: hidden;
 }
 
+/* Custom glowing dot cursor (desktop only) */
+@media (hover: hover) and (pointer: fine) {
+  html.custom-cursor,
+  html.custom-cursor * {
+    cursor: none !important;
+  }
+}
+
 ::selection {
   background: rgba(34, 211, 238, 0.3);
   color: #fff;

@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { SmoothScrollProvider } from "@/components/providers/SmoothScrollProvider";
-import { MouseGlowProvider } from "@/components/providers/MouseGlowProvider";
+import { CustomCursor } from "@/components/providers/CustomCursor";
 import { GSAPScrollProvider } from "@/components/providers/GSAPScrollProvider";
 
 const geistSans = localFont({
@@ -64,7 +64,7 @@ export default function RootLayout({
       >
         <SmoothScrollProvider>
           <GSAPScrollProvider>
-            <MouseGlowProvider />
+            <CustomCursor />
             {children}
           </GSAPScrollProvider>
         </SmoothScrollProvider>
