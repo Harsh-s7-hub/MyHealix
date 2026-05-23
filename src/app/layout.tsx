@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import { SmoothScrollProvider } from "@/components/providers/SmoothScrollProvider";
 import { CustomCursor } from "@/components/providers/CustomCursor";
@@ -68,6 +69,7 @@ export default function RootLayout({
             {children}
           </GSAPScrollProvider>
         </SmoothScrollProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
