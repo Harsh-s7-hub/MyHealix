@@ -55,23 +55,23 @@ function PhoneMockup() {
       animate={{ y: [0, -12, 0] }}
       transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
     >
-      <div className="rounded-[2rem] border-2 border-white/10 bg-healix-slate p-2 shadow-glow-lg">
-        <div className="rounded-[1.5rem] bg-healix-deep overflow-hidden">
+      <div className="rounded-[2rem] border-2 border-slate-200 bg-slate-100 p-2 shadow-card">
+        <div className="rounded-[1.5rem] bg-white overflow-hidden">
           <div className="flex justify-center py-2">
-            <div className="h-1 w-16 rounded-full bg-white/20" />
+            <div className="h-1 w-16 rounded-full bg-slate-300" />
           </div>
           <div className="px-3 pb-4 space-y-2">
             <div className="flex items-center gap-2 mb-3">
               <div className="h-6 w-6 rounded-lg bg-gradient-to-br from-healix-cyan to-healix-blue" />
-              <span className="text-[10px] font-semibold text-white">Healix</span>
+              <span className="text-[10px] font-semibold text-slate-900">Healix</span>
             </div>
-            <div className="h-16 rounded-lg bg-gradient-to-br from-healix-cyan/20 to-blue-600/10 border border-healix-cyan/20 p-2">
+            <div className="h-16 rounded-lg bg-gradient-to-br from-healix-cyan/10 to-blue-600/5 border border-healix-cyan/20 p-2">
               <p className="text-[8px] text-healix-cyan font-medium">AI Assistant</p>
               <p className="text-[7px] text-healix-muted mt-1">How can I help with your health today?</p>
             </div>
             <div className="grid grid-cols-2 gap-1.5">
               {["Heart", "Steps", "Sleep", "Meds"].map((item) => (
-                <div key={item} className="h-8 rounded-md bg-white/5 flex items-center justify-center">
+                <div key={item} className="h-8 rounded-md bg-slate-100 border border-slate-200 flex items-center justify-center">
                   <span className="text-[7px] text-healix-dim">{item}</span>
                 </div>
               ))}
@@ -111,7 +111,7 @@ export function DownloadSection() {
                 <QrCode className="h-5 w-5" />
                 <span className="text-sm font-medium uppercase tracking-wider">Scan to Download</span>
               </div>
-              <h3 className="text-2xl font-bold text-white mb-6">Scan to Download Healix</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mb-6">Scan to Download Healix</h3>
               <QRCodeVisual />
               <p className="mt-4 text-sm text-healix-muted">
                 Point your Android camera at the code

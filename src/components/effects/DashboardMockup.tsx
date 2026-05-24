@@ -41,7 +41,7 @@ export function DashboardMockup() {
           </div>
           <div>
             <p className="text-[10px] text-healix-dim uppercase tracking-wider">Heart Rate</p>
-            <p className="text-sm font-semibold text-white">72 <span className="text-healix-dim font-normal">bpm</span></p>
+            <p className="text-sm font-semibold text-slate-900">72 <span className="text-healix-dim font-normal">bpm</span></p>
           </div>
         </div>
       </motion.div>
@@ -86,9 +86,9 @@ export function DashboardMockup() {
       {/* Main dashboard */}
       <motion.div
         style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
-        className="relative rounded-2xl border border-white/10 bg-gradient-to-br from-healix-slate/90 to-healix-navy/95 p-1 shadow-glow-lg"
+        className="relative rounded-2xl border border-slate-200 bg-white p-1 shadow-card"
       >
-        <div className="rounded-xl bg-healix-deep/80 p-4 sm:p-5 backdrop-blur-xl">
+        <div className="rounded-xl bg-slate-50 p-4 sm:p-5">
           {/* Header */}
           <div className="mb-4 flex items-center justify-between">
             <div className="flex items-center gap-2">
@@ -96,7 +96,7 @@ export function DashboardMockup() {
                 <Zap className="h-4 w-4 text-healix-navy" />
               </div>
               <div>
-                <p className="text-xs font-semibold text-white">Healix Dashboard</p>
+                <p className="text-xs font-semibold text-slate-900">Healix Dashboard</p>
                 <p className="text-[10px] text-healix-dim">Live · Connected</p>
               </div>
             </div>
@@ -108,7 +108,7 @@ export function DashboardMockup() {
           </div>
 
           {/* ECG */}
-          <div className="mb-4 rounded-lg border border-healix-cyan/10 bg-black/30 p-3">
+          <div className="mb-4 rounded-lg border border-healix-cyan/20 bg-slate-100 p-3">
             <div className="mb-2 flex items-center justify-between">
               <span className="text-[10px] font-medium uppercase tracking-wider text-healix-cyan">
                 Cardiac Monitor
@@ -127,7 +127,7 @@ export function DashboardMockup() {
             ].map((stat) => (
               <div
                 key={stat.label}
-                className="rounded-lg border border-white/5 bg-white/5 p-2 text-center"
+                className="rounded-lg border border-slate-200 bg-white p-2 text-center"
               >
                 <p className={`text-sm font-bold ${stat.color}`}>{stat.value}</p>
                 <p className="text-[9px] text-healix-dim uppercase">{stat.label}</p>
@@ -136,13 +136,13 @@ export function DashboardMockup() {
           </div>
 
           {/* AI Panel */}
-          <div className="rounded-lg border border-violet-500/20 bg-gradient-to-r from-violet-500/10 to-cyan-500/10 p-3">
+          <div className="rounded-lg border border-violet-200 bg-gradient-to-r from-violet-50 to-cyan-50 p-3">
             <div className="flex items-start gap-2">
-              <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-violet-500/30">
-                <Brain className="h-3 w-3 text-violet-300" />
+              <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-violet-100">
+                <Brain className="h-3 w-3 text-violet-600" />
               </div>
               <div>
-                <p className="text-[10px] font-medium text-violet-300 mb-1">AI Health Assistant</p>
+                <p className="text-[10px] font-medium text-violet-700 mb-1">AI Health Assistant</p>
                 <p className="text-xs text-healix-muted leading-relaxed">
                   Your sleep quality improved 12% this week. Consider maintaining your current routine.
                 </p>
@@ -152,7 +152,7 @@ export function DashboardMockup() {
         </div>
 
         {/* Glow ring */}
-        <div className="absolute -inset-px rounded-2xl bg-gradient-to-r from-healix-cyan/30 via-transparent to-healix-blue/30 opacity-50 blur-sm -z-10" />
+        <div className="absolute -inset-px rounded-2xl bg-gradient-to-r from-healix-cyan/20 via-transparent to-healix-blue/20 opacity-40 blur-sm -z-10" />
       </motion.div>
     </div>
   );

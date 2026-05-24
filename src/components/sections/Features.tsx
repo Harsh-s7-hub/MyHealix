@@ -34,7 +34,7 @@ export function Features() {
                   >
                     <Icon className="h-6 w-6 text-healix-cyan" />
                   </div>
-                  <h3 className="mb-2 text-lg font-semibold text-white">{feature.title}</h3>
+                  <h3 className="mb-2 text-lg font-semibold text-slate-900">{feature.title}</h3>
                   <p className="text-sm text-healix-muted leading-relaxed">
                     {feature.description}
                   </p>

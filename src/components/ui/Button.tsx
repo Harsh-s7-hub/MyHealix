@@ -19,10 +19,10 @@ interface ButtonProps {
 
 const variants: Record<ButtonVariant, string> = {
   primary:
-    "bg-gradient-to-r from-healix-cyan to-healix-blue text-healix-navy font-semibold shadow-glow hover:shadow-glow-lg",
+    "bg-gradient-to-r from-healix-cyan to-healix-blue text-white font-semibold shadow-glow hover:shadow-glow-lg",
   secondary:
-    "glass text-white hover:border-healix-cyan/40 hover:shadow-glow",
-  ghost: "text-healix-muted hover:text-white hover:bg-white/5",
+    "glass text-slate-900 hover:border-healix-cyan/40 hover:shadow-glow",
+  ghost: "text-healix-muted hover:text-slate-900 hover:bg-slate-100",
 };
 
 function ButtonInner({ children, variant }: { children: React.ReactNode; variant: ButtonVariant }) {

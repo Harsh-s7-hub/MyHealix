@@ -9,7 +9,7 @@ export function Stats() {
   const { ref, isInView } = useInView(0.2);
 
   return (
-    <section className="relative py-20 border-y border-white/5">
+    <section className="relative py-20 border-y border-slate-200">
       <div className="absolute inset-0 bg-healix-hero opacity-50 pointer-events-none" />
 
       <div ref={ref} className="relative mx-auto max-w-7xl px-6 lg:px-8">

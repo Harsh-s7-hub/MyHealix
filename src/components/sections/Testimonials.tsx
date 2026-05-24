@@ -36,12 +36,12 @@ export function Testimonials() {
                 <p className="flex-1 text-sm text-healix-muted leading-relaxed italic">
                   &ldquo;{t.quote}&rdquo;
                 </p>
-                <div className="mt-6 flex items-center gap-3 pt-4 border-t border-white/5">
+                <div className="mt-6 flex items-center gap-3 pt-4 border-t border-slate-200">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-healix-cyan/30 to-healix-blue/30 text-sm font-semibold text-healix-cyan">
                     {t.avatar}
                   </div>
                   <div>
-                    <p className="text-sm font-medium text-white">{t.name}</p>
+                    <p className="text-sm font-medium text-slate-900">{t.name}</p>
                     <p className="text-xs text-healix-dim">{t.role}</p>
                   </div>
                 </div>

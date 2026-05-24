@@ -42,7 +42,7 @@ export function Hero() {
             >
               <span className="gradient-text">Your Health.</span>
               <br />
-              <span className="text-white">Intelligent, Connected,</span>
+              <span className="text-slate-900">Intelligent, Connected,</span>
               <br />
               <span className="gradient-text-cyan">Accessible.</span>
             </motion.h1>
@@ -92,7 +92,7 @@ export function Hero() {
                 ))}
               </div>
               <p>
-                <span className="text-white font-medium">12,000+</span> early users trust Healix
+                <span className="text-slate-900 font-medium">12,000+</span> early users trust Healix
               </p>
             </motion.div>
           </div>
@@ -109,7 +109,7 @@ export function Hero() {
       </div>
 
       {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-healix-navy to-transparent pointer-events-none" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent pointer-events-none" />
     </section>
   );
 }

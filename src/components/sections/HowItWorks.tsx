@@ -36,7 +36,7 @@ export function HowItWorks() {
               >
                 <div className={`flex-1 ${i % 2 === 0 ? "lg:text-right" : "lg:text-left"}`}>
                   <span className="text-xs font-mono text-healix-cyan/60">STEP {step.step}</span>
-                  <h3 className="mt-1 text-xl font-semibold text-white">{step.title}</h3>
+                  <h3 className="mt-1 text-xl font-semibold text-slate-900">{step.title}</h3>
                   <p className="mt-2 text-sm text-healix-muted max-w-md ml-auto lg:ml-0">
                     {step.description}
                   </p>
@@ -45,12 +45,12 @@ export function HowItWorks() {
                 {/* Node */}
                 <div className="relative z-10 flex shrink-0 justify-center">
                   <motion.div
-                    className="relative flex h-14 w-14 items-center justify-center rounded-2xl border border-healix-cyan/30 bg-healix-deep shadow-glow"
-                    animate={isInView ? { boxShadow: ["0 0 20px rgba(34,211,238,0.2)", "0 0 40px rgba(34,211,238,0.4)", "0 0 20px rgba(34,211,238,0.2)"] } : {}}
+                    className="relative flex h-14 w-14 items-center justify-center rounded-2xl border border-healix-cyan/30 bg-white shadow-glow"
+                    animate={isInView ? { boxShadow: ["0 0 20px rgba(8,145,178,0.15)", "0 0 40px rgba(8,145,178,0.3)", "0 0 20px rgba(8,145,178,0.15)"] } : {}}
                     transition={{ duration: 2, repeat: Infinity, delay: i * 0.3 }}
                   >
                     <span className="text-lg font-bold gradient-text-cyan">{step.step}</span>
-                    <div className="absolute inset-0 rounded-2xl bg-healix-cyan/10 animate-pulse" />
+                    <div className="absolute inset-0 rounded-2xl bg-healix-cyan/5 animate-pulse" />
                   </motion.div>
                 </div>
 

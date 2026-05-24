@@ -85,7 +85,7 @@ export function AISection() {
                       <Icon className="h-5 w-5 text-healix-cyan" />
                     </div>
                     <div>
-                      <h4 className="font-medium text-white">{item.label}</h4>
+                      <h4 className="font-medium text-slate-900">{item.label}</h4>
                       <p className="text-sm text-healix-muted">{item.desc}</p>
                     </div>
                   </GlowCard>
@@ -96,10 +96,10 @@ export function AISection() {
             <GlowCard className="mt-6 p-5 border-violet-500/20" tilt={false}>
               <div className="flex items-start gap-3">
                 <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-violet-500/20">
-                  <Brain className="h-4 w-4 text-violet-300" />
+                  <Brain className="h-4 w-4 text-violet-600" />
                 </div>
                 <div>
-                  <p className="text-sm font-medium text-violet-200 mb-1">Live AI Assistant</p>
+                  <p className="text-sm font-medium text-violet-700 mb-1">Live AI Assistant</p>
                   <p className="text-xs text-healix-muted leading-relaxed font-mono">
                     &gt; Analyzing health patterns...<br />
                     &gt; Generating personalized insights...<br />

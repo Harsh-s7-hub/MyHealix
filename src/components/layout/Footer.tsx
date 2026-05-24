@@ -31,7 +31,7 @@ const socials = [
 
 export function Footer() {
   return (
-    <footer className="relative border-t border-white/5 bg-healix-navy/50">
+    <footer className="relative border-t border-slate-200 bg-slate-50/80">
       <div className="absolute inset-0 bg-gradient-to-t from-healix-cyan/5 to-transparent pointer-events-none" />
       <div className="relative mx-auto max-w-7xl px-6 py-16 lg:px-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-5">
@@ -40,7 +40,7 @@ export function Footer() {
               <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-healix-cyan to-healix-blue">
                 <span className="text-sm font-bold text-healix-navy">H</span>
               </div>
-              <span className="text-lg font-semibold text-white">
+              <span className="text-lg font-semibold text-slate-900">
                 Heal<span className="text-healix-cyan">ix</span>
               </span>
             </Link>
@@ -63,7 +63,7 @@ export function Footer() {
 
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
-              <h4 className="mb-4 text-sm font-semibold text-white">{category}</h4>
+              <h4 className="mb-4 text-sm font-semibold text-slate-900">{category}</h4>
               <ul className="space-y-3">
                 {links.map((link) => (
                   <li key={link.label}>
@@ -80,7 +80,7 @@ export function Footer() {
           ))}
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/5 pt-8 sm:flex-row">
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-slate-200 pt-8 sm:flex-row">
           <p className="text-xs text-healix-dim">
             © {new Date().getFullYear()} Healix. All rights reserved.
           </p>

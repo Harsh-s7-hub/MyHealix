@@ -45,7 +45,7 @@ export function SectionHeading({
         initial={{ opacity: 0, y: 24 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6, delay: 0.1 }}
-        className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl"
+        className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl"
       >
         {title}
       </motion.h2>

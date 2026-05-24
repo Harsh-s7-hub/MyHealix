@@ -36,7 +36,7 @@ export function Navbar() {
               <span className="text-sm font-bold text-healix-navy">H</span>
               <div className="absolute inset-0 rounded-xl bg-healix-cyan opacity-0 blur-md transition-opacity group-hover:opacity-40" />
             </div>
-            <span className="text-lg font-semibold tracking-tight text-white">
+            <span className="text-lg font-semibold tracking-tight text-slate-900">
               Heal<span className="text-healix-cyan">ix</span>
             </span>
           </Link>
@@ -46,7 +46,7 @@ export function Navbar() {
               <Link
                 key={link.label}
                 href={link.href}
-                className="rounded-lg px-3.5 py-2 text-sm text-healix-muted transition-colors hover:text-white hover:bg-white/5"
+                className="rounded-lg px-3.5 py-2 text-sm text-healix-muted transition-colors hover:text-slate-900 hover:bg-slate-100"
               >
                 {link.label}
               </Link>
@@ -61,7 +61,7 @@ export function Navbar() {
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex h-10 w-10 items-center justify-center rounded-xl glass text-healix-muted transition-colors hover:text-white hover:border-healix-cyan/30"
+              className="flex h-10 w-10 items-center justify-center rounded-xl glass text-healix-muted transition-colors hover:text-slate-900 hover:border-healix-cyan/30"
               aria-label="GitHub"
             >
               <FaGithub className="h-4 w-4" />
@@ -92,12 +92,12 @@ export function Navbar() {
                 key={link.label}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="block rounded-lg px-4 py-3 text-sm text-healix-muted hover:bg-white/5 hover:text-white"
+                className="block rounded-lg px-4 py-3 text-sm text-healix-muted hover:bg-slate-100 hover:text-slate-900"
               >
                 {link.label}
               </Link>
             ))}
-            <div className="mt-3 pt-3 border-t border-white/10">
+            <div className="mt-3 pt-3 border-t border-slate-200">
               <Button href="#download" variant="primary" className="w-full">
                 Download App
               </Button>

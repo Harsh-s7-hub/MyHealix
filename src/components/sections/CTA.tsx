@@ -37,7 +37,7 @@ export function CTA() {
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl xl:text-6xl">
           <span className="gradient-text">Experience the Future</span>
           <br />
-          <span className="text-white">of Intelligent Healthcare</span>
+          <span className="text-slate-900">of Intelligent Healthcare</span>
         </h2>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg text-healix-muted">

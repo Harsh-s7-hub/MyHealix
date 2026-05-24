@@ -39,10 +39,10 @@ export function AppPreview() {
               transition={{ duration: 4, repeat: Infinity }}
             />
 
-            <div className="relative w-64 sm:w-72 rounded-[2.5rem] border-2 border-white/10 bg-healix-slate p-3 shadow-glow-lg">
-              <div className="rounded-[2rem] bg-healix-deep overflow-hidden min-h-[480px]">
+            <div className="relative w-64 sm:w-72 rounded-[2.5rem] border-2 border-slate-200 bg-slate-100 p-3 shadow-card">
+              <div className="rounded-[2rem] bg-white overflow-hidden min-h-[480px]">
                 <div className="flex justify-center py-3">
-                  <div className="h-1.5 w-20 rounded-full bg-white/20" />
+                  <div className="h-1.5 w-20 rounded-full bg-slate-300" />
                 </div>
 
                 <AnimatePresence mode="wait">
@@ -59,24 +59,24 @@ export function AppPreview() {
                         <Icon className="h-3.5 w-3.5 text-healix-navy" />
                       </div>
                       <div>
-                        <p className="text-sm font-semibold text-white">{screen.title}</p>
+                        <p className="text-sm font-semibold text-slate-900">{screen.title}</p>
                         <p className="text-[10px] text-healix-dim">{screen.description}</p>
                       </div>
                     </div>
 
                     <div
-                      className={`rounded-xl bg-gradient-to-br ${screen.color} border border-white/10 p-4 min-h-[320px] flex flex-col`}
+                      className={`rounded-xl bg-gradient-to-br ${screen.color} border border-slate-200 p-4 min-h-[320px] flex flex-col`}
                     >
                       {/* Mock UI content */}
                       <div className="space-y-3 flex-1">
-                        <div className="h-3 w-3/4 rounded bg-white/10" />
-                        <div className="h-3 w-1/2 rounded bg-white/10" />
-                        <div className="mt-4 h-24 rounded-lg bg-black/20 border border-white/5" />
+                        <div className="h-3 w-3/4 rounded bg-slate-200" />
+                        <div className="h-3 w-1/2 rounded bg-slate-200" />
+                        <div className="mt-4 h-24 rounded-lg bg-slate-100 border border-slate-200" />
                         <div className="grid grid-cols-2 gap-2">
-                          <div className="h-14 rounded-lg bg-white/5" />
-                          <div className="h-14 rounded-lg bg-white/5" />
+                          <div className="h-14 rounded-lg bg-slate-100" />
+                          <div className="h-14 rounded-lg bg-slate-100" />
                         </div>
-                        <div className="h-20 rounded-lg bg-white/5 mt-2" />
+                        <div className="h-20 rounded-lg bg-slate-100 mt-2" />
                       </div>
                     </div>
                   </motion.div>
@@ -122,7 +122,7 @@ export function AppPreview() {
                   type="button"
                   onClick={() => setCurrent(i)}
                   className={`h-1.5 rounded-full transition-all duration-300 ${
-                    i === current ? "w-8 bg-healix-cyan" : "w-1.5 bg-white/20"
+                    i === current ? "w-8 bg-healix-cyan" : "w-1.5 bg-slate-300"
                   }`}
                   aria-label={`Go to screen ${i + 1}`}
                 />
@@ -149,7 +149,7 @@ export function AppPreview() {
                 className={`rounded-full px-4 py-1.5 text-xs transition-all ${
                   i === current
                     ? "bg-healix-cyan/20 text-healix-cyan border border-healix-cyan/30"
-                    : "text-healix-dim hover:text-white"
+                    : "text-healix-dim hover:text-slate-900"
                 }`}
               >
                 {s.title}

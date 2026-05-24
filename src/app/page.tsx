@@ -12,7 +12,7 @@ import { CTA } from "@/components/sections/CTA";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen bg-healix-navy overflow-x-hidden">
+    <main className="relative min-h-screen bg-white overflow-x-hidden">
       <Navbar />
       <Hero />
       <DownloadSection />
